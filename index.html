@@ -21,7 +21,10 @@
     <main>
         <div class="container-fluid text-center">
             <div class="row">
-                <div class="col-12 pt-5">
+                <div class="col-12">
+                    <img class="logo" src="./assets/img/logo.png" alt="logo de la CFTC">
+                </div>
+                <div class="col-12 p-3">
                     <h1 class="fw-bold">Calculateur GIPA 2022</h1>
                     <p class="fst-italic">Montant de l'indemnité versée au titre
                         de la garantie individuelle du pouvoir d'achat (GIPA)
@@ -29,38 +32,36 @@
                     </p>
                     <p class="fw-bold">Inflation moyenne annuelle<br>4.36 %</p>
                 </div>
-                <div class="col-12 pt-5">
-                    <div class="pb-3">
+                <div class="col-12 col-md-6 p-4">
                         <label class="form-label fw-bold" for="IM2017">IM au 31/12/2017</label>
-                        <input type="number" placeholder="Entrez IM au 31/12/2017" id="IM2017" class="form-control text-center"/>
-                    </div>
-                    <div class="pb-3">
+                        <input type="number" placeholder="IM au 31/12/2017" id="IM2017" class="form-control text-center"/>
+                </div>
+                <div class="col-12 col-md-6 p-4">
                         <label class="form-label fw-bold" for="IM2021">IM au 31/12/2021</label>
-                        <input type="number" placeholder="Entrez IM au 31/12/2021" id="IM2021" class="form-control text-center"/>
-                    </div>
+                        <input type="number" placeholder="IM au 31/12/2021" id="IM2021" class="form-control text-center"/>
                 </div>
             </div>
         </div>
-        <div class="container-fluid text-center pt-5">
+        <div class="container-fluid text-center p-3">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-4">
                     <p class="fw-bold">Traitement mensuel brut 2017</p>
                     <p id="2017result">0 €</p>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-4">
                     <p class="fw-bold">Traitement mensuel brut 2021</p>
                     <p id="2021result">0 €</p>
                 </div>
-            </div>
-        </div>
-        <div class="container-fluid text-center pt-5">
-            <div class="row">
-                <div class="col-12">
-                    <button type="button" class="btn btn-primary" id="btnCalc">Calculer</button>
-                </div>
-                <div class="col-12 pt-3">
+                <div class="col-12  col-md-4">
                     <p class="fw-bold">Montant GIPA</p>
                     <p id="GIPA">0 €</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-12 p-3">
+                    <button type="button" class="btn btn-primary" id="btnCalc">Calculer</button>
                 </div>
             </div>
         </div>

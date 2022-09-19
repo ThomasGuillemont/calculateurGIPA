@@ -2,5 +2,15 @@
 
 * {
     font-family: 'Open Sans', sans-serif;
-    background-color: #d2e1e7;
+    color: white;
+    background-color: #043370;
+}
+
+.logo {
+    width: 10em;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #001157;
 }
