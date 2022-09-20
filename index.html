@@ -28,17 +28,23 @@
                     <h1 class="fw-bold">Calculateur GIPA 2022</h1>
                     <p class="fst-italic">Montant de l'indemnité versée au titre
                         de la garantie individuelle du pouvoir d'achat (GIPA)
-                        pour l'année 2022				
+                        pour l'année 2022
+                    </p>
+                    <p class="fw-bold">Pour en calculer le montant, il vous suffit simplement d'indiquer
+                        votre indice majoré (indice figurant sur votre bulletin de salaire)
+                        détenu en décembre 2017 et en décembre 2021
                     </p>
                     <p class="fw-bold">Inflation moyenne annuelle<br>4.36 %</p>
                 </div>
-                <div class="col-12 col-md-6 p-4">
-                        <label class="form-label fw-bold" for="IM2017">IM au 31/12/2017</label>
-                        <input type="number" placeholder="IM au 31/12/2017" id="IM2017" class="form-control text-center"/>
-                </div>
-                <div class="col-12 col-md-6 p-4">
-                        <label class="form-label fw-bold" for="IM2021">IM au 31/12/2021</label>
-                        <input type="number" placeholder="IM au 31/12/2021" id="IM2021" class="form-control text-center"/>
+                <div class="row">
+                    <div class="col-12 col-md-6 p-5">
+                            <label class="form-label fw-bold" for="IM2017">IM au 31/12/2017</label>
+                            <input type="number" placeholder="IM au 31/12/2017" id="IM2017" class="form-control text-center"/>
+                    </div>
+                    <div class="col-12 col-md-6 p-5">
+                            <label class="form-label fw-bold" for="IM2021">IM au 31/12/2021</label>
+                            <input type="number" placeholder="IM au 31/12/2021" id="IM2021" class="form-control text-center"/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -52,16 +58,9 @@
                     <p class="fw-bold">Traitement mensuel brut 2021</p>
                     <p id="2021result">0 €</p>
                 </div>
-                <div class="col-12  col-md-4">
+                <div class="col-12 col-md-4">
                     <p class="fw-bold">Montant GIPA</p>
-                    <p id="GIPA">0 €</p>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid text-center">
-            <div class="row">
-                <div class="col-12 p-3">
-                    <button type="button" class="btn btn-primary" id="btnCalc">Calculer</button>
+                    <p id="resultGIPA">0 €</p>
                 </div>
             </div>
         </div>
