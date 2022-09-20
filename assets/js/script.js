@@ -1,4 +1,4 @@
-// fonctions
+// functions
 let fonctionCalc2017 = (IM2017) => {
     let resultCalc2017 = (IM2017*55.2044)/12;
     return resultCalc2017.toFixed(2);
