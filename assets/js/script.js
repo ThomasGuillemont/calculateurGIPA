@@ -22,6 +22,9 @@ let fonctionCalcGIPA = (result2017, result2021) => {
 // variables
 let IM2017 = document.getElementById('IM2017');
 let IM2021 = document.getElementById('IM2021');
+let alert = document.getElementById('alert');
+
+let error = "L'indice moyen doit-être compris entre 150 et 1700";
 
 
 let result1 = document.getElementById('2017result');
@@ -31,17 +34,25 @@ let result3 = document.getElementById('resultGIPA');
 let averageInflation = 4.36;
 let euro = ' €';
 
-IM2017.onkeydown = function() {myFunction()};
-IM2021.onkeydown = function() {myFunction()};
+btnCalc.addEventListener('click', () => {
+    if (IM2017.value < 150 || IM2017.value > 1700 || IM2021.value < 150 || IM2021.value > 1700) {
+        alert.innerHTML = error;
 
-function myFunction() {
-    // calcs
-    let result2017 = fonctionCalc2017(IM2017.value);
-    let result2021 = fonctionCalc2021(IM2021.value);
-    let resultGIPA = fonctionCalcGIPA(result2017, result2021);
+        result1.innerHTML = euro;
+        result2.innerHTML = euro;
+        result3.innerHTML = euro;
+    } else {
+        alert.innerHTML = "";
 
-    // results
-    result1.innerHTML = result2017+euro;
-    result2.innerHTML = result2021+euro;
-    result3.innerHTML = resultGIPA+euro;
-}
+        // calcs
+        let result2017 = fonctionCalc2017(IM2017.value);
+        let result2021 = fonctionCalc2021(IM2021.value);
+        let resultGIPA = fonctionCalcGIPA(result2017, result2021);
+
+        // results
+        result1.innerHTML = result2017+euro;
+        result2.innerHTML = result2021+euro;
+        result3.innerHTML = resultGIPA+euro;
+    }
+
+});

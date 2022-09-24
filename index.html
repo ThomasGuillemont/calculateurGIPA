@@ -17,8 +17,9 @@
 </head>
 
 <body>
-    <!-- main -->
     <main>
+
+        <!-- head -->
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col-12">
@@ -26,41 +27,54 @@
                 </div>
                 <div class="col-12 p-3">
                     <h1 class="fw-bold">Calculateur GIPA 2022</h1>
-                    <p class="fst-italic">Montant de l'indemnité versée au titre
+                    <p class="mb-2">Montant de l'indemnité versée au titre
                         de la garantie individuelle du pouvoir d'achat (GIPA)
-                        pour l'année 2022
+                        pour l'année 2022 avec inflation moyenne annuelle de 4.36 %
                     </p>
-                    <p class="fw-bold">Pour en calculer le montant, il vous suffit simplement d'indiquer
+                    <p class="mb-2">Pour en calculer le montant, il vous suffit simplement d'indiquer
                         votre indice majoré (indice figurant sur votre bulletin de salaire)
                         détenu en décembre 2017 et en décembre 2021
                     </p>
-                    <p class="fw-bold">Inflation moyenne annuelle<br>4.36 %</p>
-                </div>
-                <!-- inputs -->
-                <div class="row">
-                    <div class="col-12 col-md-6 p-5">
-                            <label class="form-label fw-bold" for="IM2017">IM au 31/12/2017</label>
-                            <input type="number" placeholder="IM au 31/12/2017" id="IM2017" class="form-control text-center"/>
-                    </div>
-                    <div class="col-12 col-md-6 p-5">
-                            <label class="form-label fw-bold" for="IM2021">IM au 31/12/2021</label>
-                            <input type="number" placeholder="IM au 31/12/2021" id="IM2021" class="form-control text-center"/>
-                    </div>
+                    <p class="fw-bold">Résultat informatif, la CFTC ne peut aucunement être tenu responsable
+                    </p>
                 </div>
             </div>
         </div>
+
+        <!-- inputs -->
+        <div class="container-fluid text-center p-3">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-2 inputs">
+                        <label class="form-label fw-bold" for="IM2017">IM au 31/12/2017</label>
+                        <input type="number" placeholder="IM au 31/12/2017" id="IM2017" class="form-control text-center"/>
+                </div>
+                <div class="col-12 col-md-6 mb-2 inputs">
+                        <label class="form-label fw-bold" for="IM2021">IM au 31/12/2021</label>
+                        <input type="number" placeholder="IM au 31/12/2021" id="IM2021" class="form-control text-center"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="btn btn-primary mt-4" id="btnCalc">Calculer</button>
+                </div>
+                <div id="alert" class="mt-3">
+
+                </div>
+            </div>
+        </div>
+
         <!-- results -->
         <div class="container-fluid text-center p-3">
             <div class="row">
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-lg-4">
                     <p class="fw-bold">Traitement mensuel brut 2017</p>
                     <p id="2017result">0 €</p>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-lg-4">
                     <p class="fw-bold">Traitement mensuel brut 2021</p>
                     <p id="2021result">0 €</p>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-lg-4">
                     <p class="fw-bold">Montant GIPA</p>
                     <p id="resultGIPA">0 €</p>
                 </div>
